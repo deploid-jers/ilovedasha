@@ -1,0 +1,387 @@
+/* --- Стили 3-го месяца --- */
+
+.month3-card {
+  border-left: 4px solid #a55eea;
+  background: linear-gradient(to bottom right, #ffffff, #f9f0ff);
+}
+
+.month3-badge {
+  background: #f1e5ff;
+  color: #8854d0;
+}
+
+/* Баннер встречи */
+.reunion-banner {
+  background: linear-gradient(135deg, #a55eea 0%, #74b9ff 100%);
+  border-radius: 24px;
+  padding: 22px 20px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 8px 25px rgba(165, 94, 234, 0.25);
+  margin-bottom: 25px;
+}
+
+.reunion-icon {
+  font-size: 2.2rem;
+  margin-bottom: 6px;
+}
+
+.reunion-content h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.reunion-content p {
+  font-size: 0.88rem;
+  opacity: 0.95;
+  line-height: 1.4;
+}
+
+/* Обводка видеокружочков для 3 месяца */
+.video-ring.month3-ring {
+  background: linear-gradient(135deg, #a55eea, #fd79a8);
+  box-shadow: 0 6px 18px rgba(165, 94, 234, 0.3);
+}
+
+/* --- Фотоальбомы с табами --- */
+.month3-albums-section {
+  margin-bottom: 30px;
+}
+
+.album-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+  background: #f0f0f0;
+  padding: 4px;
+  border-radius: 16px;
+}
+
+.album-tab {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  color: #666;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.25 ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.album-tab.active {
+  background: #ffffff;
+  color: #8854d0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.album-content {
+  display: none;
+  animation: fadeIn 0.4s ease;
+}
+
+.album-content.active {
+  display: block;
+}
+
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.album-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  border: 1px solid #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.album-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.album-card span {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #444;
+  text-align: center;
+  padding: 2px 4px;
+}
+
+
+
+/* --- Стили 3-го месяца --- */
+
+.month3-card {
+  border-left: 4px solid #a55eea;
+  background: linear-gradient(to bottom right, #ffffff, #f9f0ff);
+}
+
+.month3-badge {
+  background: #f1e5ff;
+  color: #8854d0;
+}
+
+/* Баннер встречи */
+.reunion-banner {
+  background: linear-gradient(135deg, #a55eea 0%, #74b9ff 100%);
+  border-radius: 24px;
+  padding: 22px 20px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 8px 25px rgba(165, 94, 234, 0.25);
+  margin-bottom: 25px;
+}
+
+.reunion-icon {
+  font-size: 2.2rem;
+  margin-bottom: 6px;
+}
+
+.reunion-content h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.reunion-content p {
+  font-size: 0.88rem;
+  opacity: 0.95;
+  line-height: 1.4;
+}
+
+/* Душевная заметка о живом общении */
+.real-life-note {
+  background: linear-gradient(135deg, #fff5f7 0%, #f3e8ff 100%);
+  padding: 18px;
+  border-radius: 20px;
+  border: 1px dashed #d6a2e8;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  box-shadow: 0 4px 15px rgba(165, 94, 234, 0.05);
+}
+
+.note-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.note-text {
+  font-size: 0.88rem;
+  color: #555;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+/* --- Баночка со счастливками --- */
+.happiness-jar-section {
+  margin-bottom: 35px;
+}
+
+.jar-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 25px 20px;
+  text-align: center;
+  border: 2px solid #e1b12c;
+  box-shadow: 0 8px 20px rgba(225, 177, 44, 0.15);
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.jar-card:active {
+  transform: scale(0.96);
+}
+
+.jar-badge {
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #b5820f;
+  background: #fbf3d5;
+  padding: 4px 12px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.jar-icon-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.jar-icon {
+  font-size: 4rem;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.jar-card.shake .jar-icon {
+  animation: jarShake 0.5s ease;
+}
+
+@keyframes jarShake {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(-10deg) scale(1.1); }
+  40% { transform: rotate(10deg) scale(1.1); }
+  60% { transform: rotate(-10deg) scale(1.1); }
+  80% { transform: rotate(10deg) scale(1.1); }
+  100% { transform: rotate(0deg) scale(1); }
+}
+
+.jar-sparkles {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  font-size: 1.5rem;
+  animation: pulseSparkle 1.5s infinite alternate;
+}
+
+@keyframes pulseSparkle {
+  from { opacity: 0.4; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1.2); }
+}
+
+.jar-instruction {
+  font-size: 0.85rem;
+  color: #777;
+  font-weight: 500;
+}
+
+/* Всплывающая карточка-записка */
+.note-popup {
+  margin-top: 15px;
+  background: linear-gradient(135deg, #fff3b0 0%, #ffeaa7 100%);
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  animation: popupSlideUp 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.note-popup.hidden {
+  display: none;
+}
+
+@keyframes popupSlideUp {
+  from { opacity: 0; transform: translateY(15px) scale(0.9); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.note-popup-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+}
+
+.note-emoji {
+  font-size: 1.8rem;
+}
+
+#noteText {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #2d3436;
+  line-height: 1.35;
+}
+
+/* Обводка видеокружочков для 3 месяца */
+.video-ring.month3-ring {
+  background: linear-gradient(135deg, #a55eea, #fd79a8);
+  box-shadow: 0 6px 18px rgba(165, 94, 234, 0.3);
+}
+
+/* Фотоальбомы с табами */
+.month3-albums-section {
+  margin-bottom: 30px;
+}
+
+.album-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+  background: #f0f0f0;
+  padding: 4px;
+  border-radius: 16px;
+}
+
+.album-tab {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  color: #666;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.album-tab.active {
+  background: #ffffff;
+  color: #8854d0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.album-content {
+  display: none;
+  animation: fadeIn 0.4s ease;
+}
+
+.album-content.active {
+  display: block;
+}
+
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.album-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  border: 1px solid #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.album-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.album-card span {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #444;
+  text-align: center;
+  padding: 2px 4px;
+}

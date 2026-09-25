@@ -152,9 +152,15 @@
                     <div class="month-status">💖 Завершен</div>
                     </a>
 
-                    <div class="month-card locked">
+                    <a href="#month3" class="month-card active-month">
                     <span class="month-number">03</span>
                     <span class="month-text">Третий <br>месяц</span>
+                    <div class="month-status">❤️‍🔥 Завершен</div>
+                    </a>
+
+                    <div class="month-card locked">
+                    <span class="month-number">04</span>
+                    <span class="month-text">Четвертый <br>месяц</span>
                     <div class="month-status">⏳ Начался...</div>
                     </div>
 
@@ -655,6 +661,191 @@
                 </div>
 
             </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="month3_block block">
+        <div class="container">
+            <section id="month3" class="content-section">
+                <!-- Шапка третьего месяца -->
+                <div class="month-intro-card month3-card">
+                    <span class="month-badge month3-badge">Месяц #3</span>
+                    <h2 class="section-title">Вместе и рядом ✨</h2>
+                    <p class="month-text">
+                        Третий месяц стал моментом, когда любые расстояния остались позади. Мы наконец-то вместе, и каждый день рядом с тобой - это мой маленький праздник.
+                    </p>
+                </div>
+
+                <!-- Карточка-акцент о встрече -->
+                <div class="reunion-banner">
+                    <div class="reunion-icon">🏡❤️</div>
+                    <div class="reunion-content">
+                        <h3>Больше никаких километров!</h3>
+                        <p>Самое лучшее чувство - просто обнять тебя крепко и знать, что ты рядом.</p>
+                    </div>
+                </div>
+
+                <!-- Статистика за 3-й месяц -->
+                <h3 class="subsection-title">Статистика за месяц 🗒️</h3>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper">💬</div>
+                        <div class="stat-info">
+                            <span class="stat-value" data-target="7454">0</span>
+                            <span class="stat-label">сообщений</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper">🎙️</div>
+                        <div class="stat-info">
+                            <span class="stat-value" data-target="419">0</span>
+                            <span class="stat-label">голосовых</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper">🤝</div>
+                        <div class="stat-info">
+                            <span class="stat-value" data-target="92">0</span>
+                            <span class="stat-label">дня вместе</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper">🌇</div>
+                        <div class="stat-info">
+                            <span class="stat-value" data-target="212">0</span>
+                            <span class="stat-label">Фотографий</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper">🥰</div>
+                        <div class="stat-info">
+                            <span class="stat-value" data-target="80">0</span>
+                            <span class="stat-label">Слов "Люблю"</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper">💖</div>
+                        <div class="stat-info">
+                            <span class="stat-value stat-value-love">∞³</span>
+                            <span class="stat-label">Любви без границ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quotes-wrapper">
+                    <div class="quote-card">
+                        <span class="quote-icon">🫂</span>
+                        <p class="quote-text">Главный итог этого месяца - мы наконец-то перенесли нашу историю из экранов телефонов в реальную жизнь. Живые обнимашки, долгие разговоры по вечерам и совместные моменты стоят тысячи переписок!</p>
+                    </div>
+                </div>
+
+                <div class="happiness-jar-section">
+                    <h3 class="subsection-title">Баночка со счастливками 🫙✨</h3>
+                    <div class="jar-card" id="jarCard">
+                        <div class="jar-badge">Нажми на баночку!</div>
+                        <div class="jar-icon-wrapper">
+                            <span class="jar-icon">🫙</span>
+                            <span class="jar-sparkles">✨</span>
+                        </div>
+                        <p class="jar-instruction">Достань случайную записку с тёплыми словами</p>
+                        
+                        <div class="note-popup hidden" id="notePopup">
+                            <div class="note-popup-content">
+                                <span class="note-emoji" id="noteEmoji">💌</span>
+                                <p id="noteText">Ты — лучшее, что случалось со мной!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Фотоальбомы с переключателем вкладок (Tabs) -->
+                <div class="month3-albums-section">
+                    <h3 class="subsection-title">Фотоальбомы 📸</h3>
+                    
+                    <!-- Табы для альбомов -->
+                    <div class="album-tabs">
+                        <button class="album-tab active" onclick="switchAlbum(event, 'album1')">Прогулки 🌆</button>
+                        <button class="album-tab" onclick="switchAlbum(event, 'album2')">Уютные вечера ☕</button>
+                    </div>
+
+                    <!-- Альбом 1 -->
+                    <div id="album1" class="album-content active">
+                        <div class="album-grid">
+                            <div class="album-card">
+                                <img src="./src/images/month3/city1.png" alt="Прогулка по городу">
+                                <span>Вечерний город</span>
+                            </div>
+                            <div class="album-card">
+                                <img src="./src/images/month3/sweety.png" alt="Клубничка">
+                                <span>Ммм, клубничка</span>
+                            </div>
+                            <div class="album-card">
+                                <img src="./src/images/month3/our1.png" alt="Прогулочка">
+                                <span>Счастливые моменты</span>
+                            </div>
+                            <div class="album-card">
+                                <img src="./src/images/month3/our2.png" alt="Прогулочка">
+                                <span>Вместе везде</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Альбом 2 -->
+                    <div id="album2" class="album-content">
+                        <div class="album-grid">
+                            <div class="album-card">
+                                <img src="./src/images/month3/home1.png" alt="Дом 1">
+                                <span>Фотосессия</span>
+                            </div>
+                            <div class="album-card">
+                                <img src="./src/images/month3/home2.png" alt="Дом 2">
+                                <span>Обнимашки</span>
+                            </div>
+                            <div class="album-card">
+                                <img src="./src/images/month3/home3.png" alt="Дом 3">
+                                <span>Теперь ты выше меня</span>
+                            </div>
+                            <div class="album-card">
+                                <img src="./src/images/month3/home.png" alt="Дом 4">
+                                <span>Быдло</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+
+    <div class="turbo_block block">
+        <div class="container">
+            <section id="turbo" class="content-section">                
+                <div class="monya-header">
+                <h2 class="section-title">Наша Турбо 🐹</h2>
+                <p class="monya-desc">
+                    У нас пополнение в семье, это хомячок "Турбо" 😊
+                </p>
+                </div>
+
+                <div class="monya-gallery">
+
+                <div class="photo-group ">
+                    <img src="./src/images/turbo/img.png" alt="Турбо" class="gallery-img img-large">
+                    <img src="./src/images/turbo/img1.png" alt="Турбо" class="gallery-img img-small">
+                    <img src="./src/images/turbo/img2.png" alt="Турбо" class="gallery-img img-small">
+                </div>
+
+                
+                </div>
+
+                <button id="load-more-btn" class="load-more-btn" style="display: none;">Показать еще фоточки 📸</button>
+
             </section>
         </div>
     </div>

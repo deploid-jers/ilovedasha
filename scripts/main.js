@@ -19,6 +19,7 @@ import * as menu from "./menu.js"
 import * as monya from "./monya.js"
 import * as mouth1 from "./mouth1.js"
 import * as month2 from "./month2.js"
+import * as month3 from "./month3.js"
 
 
 
@@ -28,5 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
     menu.initMenu()
     mouth1.initMouth1()
     month2.initMouth2()
+    month3.initMouth3()
     monya.initMonya()
 });
