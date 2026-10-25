@@ -72,7 +72,8 @@ export function createHeartsShower(event, icons = ['❤️', '💖', '💕', '�
 
 export function initMainBlock(){
     const photos = [
-    { src: './src/images/hero/we2.png',tag: 'Тапни на нас ✨'},
+    { src: './src/images/hero/hero_img5.png',tag: 'Тапни на нас ✨'},
+    { src: './src/images/hero/we2.png',tag: 'Люблю тебя 💖'},
     { src: './src/images/hero/we1.png',tag: 'Были у моста влюбленных ❤️‍🔥'},
     { src: './src/images/hero/we.jpg',tag: 'Созданы друг для друга 🫂'},
     { src: './src/images/hero/hero_img.jpg', tag: 'Прогулочка 👩‍❤️‍👨' },

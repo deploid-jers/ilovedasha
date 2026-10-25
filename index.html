@@ -89,7 +89,7 @@
                     <!-- ИНТЕРАКТИВНАЯ АВАТАРКА -->
                     <div class="hero-avatar-wrapper" id="avatar-trigger">
                         <div class="avatar-ring"></div>
-                        <img src="./src/images/hero/we2.png" alt="Мы" class="hero-avatar" id="hero-avatar-img">
+                        <img src="./src/images/hero/hero_img5.jpg" alt="Мы" class="hero-avatar" id="hero-avatar-img">
                         <!-- Микро-подпись, меняющаяся при клике -->
                         <span class="avatar-tag" id="avatar-tag">Тапни на нас ✨</span>
                     </div>
@@ -158,14 +158,20 @@
                     <div class="month-status">❤️‍🔥 Завершен</div>
                     </a>
 
+                    <a href="#month4" class="month-card active-month">
+                        <span class="month-number">04</span>
+                        <span class="month-text">Четвертый <br>месяц</span>
+                        <div class="month-status">💖 Завершен</div> 
+                    </a>
+
                     <div class="month-card locked">
-                    <span class="month-number">04</span>
-                    <span class="month-text">Четвертый <br>месяц</span>
+                    <span class="month-number">05</span>
+                    <span class="month-text">Пятый <br>месяц</span>
                     <div class="month-status">⏳ Начался...</div>
                     </div>
 
                 </div>
-            </div>
+            </div> 
 
             <a href="#monya" class="special-card monya-card">
                 <div class="special-info">
@@ -173,6 +179,14 @@
                     <p class="special-subtitle">Любимая булочка</p>
                 </div>
                 <div class="special-image-placeholder"></div>
+            </a>
+
+            <a href="#turbo" class="special-card monya-card">
+                <div class="special-info">
+                    <h3 class="special-title">Турбо 🐾</h3>
+                    <p class="special-subtitle">Наш хомячок 🐹</p>
+                </div>
+                <div class="special-image-placeholder menu-turbo"></div>
             </a>
         </section>
     </div>
@@ -823,6 +837,183 @@
         </div>
     </div>
 
+    <div class="month4_block block">
+        <div class="container">
+            <section id="month4" class="content-section">
+                <!-- Шапка четвертого месяца -->
+                <div class="month-intro-card month4-card">
+                    <span class="month-badge month4-badge">Месяц #4</span>
+                    <h2 class="section-title">Теплота и уют 💫</h2>
+                    <p class="month-text">
+                    Этот месяц запомнится нашими частыми вечерними прогулками и невероятно уютными посиделками дома. Каждая минута, проведенная с тобой, дарит мне столько эмоций, сколько никто не подарит!   
+                    </p>
+                </div>
+
+                <!-- Цитата месяца -->
+                <div class="quotes-wrapper">
+                    <div class="quote-card accent">
+                        <span class="quote-icon">❤️‍🔥</span>
+                        <p class="quote-text">«Счастье - это когда тебе тепло вдвоем не от погоды, а от присутствия друг друга»</p>
+                    </div>
+                </div>
+
+                <div class="quotes-wrapper">
+                    <div class="quote-card accent">
+                        <span class="quote-icon">🌆</span>
+                        <p class="quote-text">«Город зажигает огни, но для меня самый яркий свет - это твоя улыбка при встрече»</p>
+                    </div>
+                </div>
+                
+                <!-- Статистика за 4-й месяц -->
+                <h3 class="subsection-title">Статистика за месяц 🗒️</h3>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper">💬</div>
+                        <div class="stat-info">
+                            <span class="stat-value" data-target="7591">0</span>
+                            <span class="stat-label">сообщений</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper">🎙️</div>
+                        <div class="stat-info">
+                            <span class="stat-value" data-target="278">0</span>
+                            <span class="stat-label">голосовых</span>
+                        </div>
+                    </div>
+
+
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper">🌇</div>
+                        <div class="stat-info">
+                            <span class="stat-value" data-target="187">0</span>
+                            <span class="stat-label">Фотографий</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper">🥰</div>
+                        <div class="stat-info">
+                            <span class="stat-value" data-target="134">0</span>
+                            <span class="stat-label">Слов "Люблю"</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper">💖</div>
+                        <div class="stat-info">
+                            <span class="stat-value stat-value-love">∞⁴</span>
+                            <span class="stat-label">Безграничной любви</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ИЗЮМИНКА: Интерактивный чек-лист традиций -->
+                <div class="traditions-section">
+                    <h3 class="subsection-title">Наши традиции ✨ (нажми, чтобы отметить)</h3>
+                    <div class="traditions-list" id="traditionsList">
+                        <div class="tradition-item" onclick="toggleTradition(event, this)">
+                            <div class="tradition-checkbox">✓</div>
+                            <span class="tradition-text">Пить вместе горячий чай по вечерам ☕</span>
+                        </div>
+                        <div class="tradition-item" onclick="toggleTradition(event, this)">
+                            <div class="tradition-checkbox">✓</div>
+                            <span class="tradition-text">Смотреть сериалы в обнимку под пледом 🎬</span>
+                        </div>
+                        <div class="tradition-item" onclick="toggleTradition(event, this)">
+                            <div class="tradition-checkbox">✓</div>
+                            <span class="tradition-text">Дурачиться и делать смешные селфи 📸</span>
+                        </div>
+                        <div class="tradition-item" onclick="toggleTradition(event, this)">
+                            <div class="tradition-checkbox">✓</div>
+                            <span class="tradition-text">Засыпать с мыслями друг о друге 🌙</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Видеокружочки (Тг кружки) -->
+                <div class="video-circles-section">
+                    <h3 class="subsection-title">Видео-кружочки 🎥</h3>
+                    <div class="video-circles-wrapper">
+                        <div class="video-circle-item">
+                            <div class="video-ring month4-ring">
+                                <video src="./src/videos/month4/video1.mp4" playsinline muted class="telegram-video"></video>
+                                <div class="play-overlay">▶</div>
+                                <div class="sound-toggle">🔇</div>
+                            </div>
+                            <span class="video-caption">Рассказываем какие то слайды 👩‍🎓</span>
+                        </div>
+
+                        <div class="video-circle-item">
+                            <div class="video-ring month4-ring">
+                                <video src="./src/videos/month4/video2.mp4" playsinline muted class="telegram-video"></video>
+                                <div class="play-overlay">▶</div>
+                                <div class="sound-toggle">🔇</div>
+                            </div>
+                            <span class="video-caption">Парааа 🥱</span>
+                        </div>
+                    </div>
+                    <div class="video-circles-wrapper" style="margin-top: 20px;">
+                        <div class="video-circle-item">
+                            <div class="video-ring month4-ring">
+                                <video src="./src/videos/month4/video3.mp4" playsinline muted class="telegram-video"></video>
+                                <div class="play-overlay">▶</div>
+                                <div class="sound-toggle">🔇</div>
+                            </div>
+                            <span class="video-caption">ТурбоТурбоТурбоТурбо🐹</span>
+                        </div>
+
+                        <div class="video-circle-item">
+                            <div class="video-ring month4-ring">
+                                <video src="./src/videos/month4/video4.mp4" playsinline muted class="telegram-video"></video>
+                                <div class="play-overlay">▶</div>
+                                <div class="sound-toggle">🔇</div>
+                            </div>
+                            <span class="video-caption">Турбо на прогулочке 🐹🚶‍♀️</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Фотогалерея (Полароид-стиль) -->
+                <div class="month-gallery-section">
+                    <h3 class="subsection-title">Моменты 4-го месяца 📸</h3>
+                    <div class="polaroid-scroll">
+                        <div class="polaroid-card">
+                            <img src="./src/images/month4/1.jpg" alt="Фото 1">
+                            <span class="polaroid-caption">😴💤💤</span>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="./src/images/month4/2.jpg" alt="Фото 2">
+                            <span class="polaroid-caption">Красавица и чудовище 🦁</span>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-item item-large">
+                    <img src="./src/images/month4/3.jpg" alt="Главное фото месяца">
+                    <div class="grid-caption">Фотография месяца 🥇</div>
+                    </div>
+
+                    <div class="month-gallery-section">
+                    <div class="polaroid-scroll">
+                        <div class="polaroid-card">
+                            <img src="./src/images/month4/5.jpg" alt="Фото 1">
+                            <span class="polaroid-caption">Осенняя прогулочка 🍁</span>
+                        </div>
+                        <div class="polaroid-card">
+                            <img src="./src/images/month4/6.jpg" alt="Фото 2">
+                            <span class="polaroid-caption">Моя сладость 🍰</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </div>
+
     <div class="turbo_block block">
         <div class="container">
             <section id="turbo" class="content-section">                
@@ -849,7 +1040,6 @@
             </section>
         </div>
     </div>
-
 
     <div class="monya_block block">
         <div class="container">

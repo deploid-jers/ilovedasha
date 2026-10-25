@@ -123,6 +123,10 @@
   border: 3px dashed #ffffff;
 }
 
+.menu-turbo{
+  background-image: url("../src/images/turbo/img2.png");
+}
+
 
 .floating-nav {
   position: fixed;
