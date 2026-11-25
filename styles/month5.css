@@ -1,0 +1,224 @@
+/* --- Стили 5-го месяца: «Созвездие» --- */
+.month5-card {
+  border-left: 4px solid #a29bfe;
+  background: linear-gradient(to bottom right, #ffffff, #f4f1ff);
+}
+
+.month5-badge {
+  background: #e0dcff;
+  color: #6c5ce7;
+}
+
+.video-ring.month5-ring {
+  background: linear-gradient(135deg, #a29bfe, #fd79a8);
+  box-shadow: 0 6px 18px rgba(162, 155, 254, 0.35);
+}
+
+.m5-sky-section {
+  margin-bottom: 30px;
+}
+
+/* Небо */
+.m5-sky {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  border-radius: 24px;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 50% 108%, rgba(253, 121, 168, 0.55) 0%, rgba(253, 121, 168, 0) 60%),
+    linear-gradient(to bottom, #120d2b 0%, #2a1850 55%, #5a2a6e 100%);
+  box-shadow: 0 10px 30px rgba(42, 24, 80, 0.35);
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.m5-sky, .m5-sky * {
+  transition: none; /* перебиваем глобальный transition из main.css */
+}
+
+#m5Canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  touch-action: pan-y; /* вертикальный скролл страницы работает */
+}
+
+/* Подсказка сверху */
+.m5-hint {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.12);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 3;
+}
+
+/* Звёзды-кнопки (зона тапа 48px) */
+.m5-star {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  transform: translate(-50%, -50%);
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  z-index: 2;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.m5-core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 26px;
+  height: 26px;
+  margin: -13px 0 0 -13px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.18);
+  border: 1.5px solid rgba(255, 255, 255, 0.45);
+  transition: background 0.35s ease, color 0.35s ease, box-shadow 0.35s ease, transform 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.m5-star.next .m5-core {
+  animation: m5Invite 1.4s ease-in-out infinite;
+}
+
+.m5-star.lit .m5-core {
+  background: radial-gradient(circle, #fffbe6 0%, #ffeaa7 60%, #fdcb6e 100%);
+  color: #b2562c;
+  border-color: #fff;
+  transform: scale(1.3);
+  box-shadow: 0 0 14px 4px rgba(255, 234, 167, 0.9), 0 0 36px 10px rgba(253, 203, 110, 0.45);
+  animation: m5Twinkle 2.4s ease-in-out infinite;
+}
+
+.m5-star.shake { animation: m5Shake 0.4s ease; }
+
+@keyframes m5Invite {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7); transform: scale(1); }
+  50% { box-shadow: 0 0 0 12px rgba(255, 255, 255, 0); transform: scale(1.18); }
+}
+
+@keyframes m5Twinkle {
+  0%, 100% { transform: scale(1.3); }
+  50% { transform: scale(1.42); }
+}
+
+@keyframes m5Shake {
+  0%, 100% { transform: translate(-50%, -50%); }
+  25% { transform: translate(calc(-50% - 6px), -50%); }
+  75% { transform: translate(calc(-50% + 6px), -50%); }
+}
+
+/* Карточка-записка внизу неба */
+.m5-note {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 10px;
+  padding: 12px 14px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.16);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  opacity: 0;
+  transform: translateY(14px);
+  pointer-events: none;
+  z-index: 3;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.m5-note.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.m5-note-emoji { font-size: 1.6rem; }
+
+.m5-note-text {
+  flex: 1;
+  min-width: 0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.m5-reset {
+  display: none;
+  width: 100%;
+  margin-top: 6px;
+  padding: 9px;
+  border: 0;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #6c5ce7;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.m5-note.finished .m5-reset { display: block; }
+.m5-reset:active { transform: scale(0.97); }
+
+/* Прогресс под небом */
+.m5-progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.m5-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #dfe6e9;
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.m5-dot.on {
+  background: #fdcb6e;
+  box-shadow: 0 0 8px rgba(253, 203, 110, 0.9);
+  transform: scale(1.25);
+}
+
+.m5-counter {
+  margin-left: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #636e72;
+}
+
+.m5-tip {
+  margin-top: 10px;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: #888;
+  text-align: center;
+}

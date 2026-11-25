@@ -127,6 +127,10 @@
   background-image: url("../src/images/turbo/img2.png");
 }
 
+.menu-ibragim{
+  background-image: url("../src/images/ibragim/1.png");
+}
+
 
 .floating-nav {
   position: fixed;
